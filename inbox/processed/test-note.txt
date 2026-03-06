@@ -1,0 +1,13 @@
+---
+processed_at: '2026-03-06T19:20:15.511520+00:00'
+status: processed
+---
+
+Today I've been working on setting up Personal Alfred on my local Arch Linux system. This is part of my larger project to build a personal knowledge management infrastructure.
+
+I'm using the alfred-vault package which has three main daemons:
+- Curator: processes inbox files
+- Janitor: validates vault structure  
+- Distiller: extracts learnings
+
+The system uses Claude API for AI operations and stores everything in an Obsidian-compatible markdown vault.

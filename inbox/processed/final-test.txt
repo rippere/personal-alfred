@@ -1,0 +1,18 @@
+---
+processed_at: '2026-03-06T19:26:54.717745+00:00'
+status: processed
+---
+
+SUCCESS! Fixed the personal-alfred integration issue. The root cause was missing ALFRED_VAULT_PATH environment variable in the subprocess that alfred-vault spawns for Claude Code.
+
+Key collaborators:
+- Claude Code (AI assistant helping with debugging)
+- David (creator of alfred-vault package)
+
+This debugging session taught me about:
+1. OAuth vs API key authentication
+2. Environment variable propagation in subprocess calls  
+3. The importance of checking subprocess environment setup
+
+Project: personal-alfred deployment on Arch Linux
+Date: March 6, 2026

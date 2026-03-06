@@ -1,0 +1,6 @@
+---
+processed_at: '2026-03-06T19:28:21.346124+00:00'
+status: processed
+---
+
+Simple test note for debugging. This should be processed into the vault as a note entity.

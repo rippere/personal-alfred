@@ -1,0 +1,10 @@
+---
+processed_at: '2026-03-06T19:24:56.740042+00:00'
+status: processed
+---
+
+BREAKTHROUGH! Found the issue with personal-alfred setup. The problem was that the .env file contained an invalid ANTHROPIC_API_KEY, which overrode my OAuth authentication for Claude Code.
+
+The solution: Comment out the API key in .env and let Claude Code use OAuth authentication instead.
+
+This is a great learning: when integrating systems that use different auth methods, be careful about environment variable precedence!

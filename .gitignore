@@ -1,0 +1,18 @@
+# Obsidian workspace and cache files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+.syncthing.*
+
+# Sensitive files
+.env
+*.log
+
+# Temporary files
+Untitled*.md

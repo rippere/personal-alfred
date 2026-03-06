@@ -1,0 +1,10 @@
+---
+processed_at: '2026-03-06T19:23:08.653789+00:00'
+status: processed
+---
+
+I just fixed a bug in the personal-alfred setup. The issue was that the .env file had an invalid Anthropic API key. I found the correct key in ~/.anthropic_api_key and updated the .env file.
+
+This is part of my personal knowledge management infrastructure project. I'm working with David (collaborator) who built the original alfred-vault package.
+
+Key insight: Always verify API keys when setting up AI-powered systems!
