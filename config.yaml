@@ -1,0 +1,63 @@
+vault:
+  path: /mnt/external/obsidian-vault
+  ignore_dirs:
+  - _templates
+  - _bases
+  - _docs
+  - .obsidian
+  - view
+  ignore_files:
+  - .gitkeep
+
+agent:
+  backend: claude
+
+logging:
+  level: INFO
+  dir: ./data
+
+curator:
+  inbox_dir: inbox
+  processed_dir: inbox/processed
+  watcher:
+    poll_interval: 5
+    debounce_seconds: 10
+  state:
+    path: ./data/curator_state.json
+
+janitor:
+  sweep:
+    interval_seconds: 3600
+    deep_sweep_interval_hours: 24
+    structural_only: false
+    stub_body_threshold_chars: 50
+    orphan_exempt_dirs:
+    - dashboard
+    - view
+    max_files_per_agent_call: 30
+    fix_log_in_vault: true
+  state:
+    path: ./data/janitor_state.json
+    max_sweep_history: 20
+
+distiller:
+  extraction:
+    interval_seconds: 3600
+    deep_interval_hours: 24
+    candidate_threshold: 0.3
+    max_sources_per_batch: 20
+    source_types:
+    - conversation
+    - session
+    - note
+    - task
+    - project
+    learn_types:
+    - assumption
+    - decision
+    - constraint
+    - contradiction
+    - synthesis
+  state:
+    path: ./data/distiller_state.json
+    max_run_history: 20

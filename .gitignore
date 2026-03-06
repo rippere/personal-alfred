@@ -1,0 +1,56 @@
+# Secrets & credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+config.toml
+!config.toml.example
+
+# API keys / tokens that might be in standalone files
+*token*
+*apikey*
+*secret*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+
+# Data & logs
+*.db
+*.sqlite
+*.log
+data/
+!data/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Playwright
+browser_profile/
+screenshots/
+
+# Project-specific
+# .env already covered above (ANTHROPIC_API_KEY)
+# data/ already covered above (logs, .db files) — data/.gitkeep is preserved
+.obsidian/
