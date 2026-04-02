@@ -1,5 +1,5 @@
 vault:
-  path: /mnt/external/obsidian-vault
+  path: /home/rippere/Projects/obsidian-vault
   ignore_dirs:
   - _templates
   - _bases
@@ -61,3 +61,14 @@ distiller:
   state:
     path: ./data/distiller_state.json
     max_run_history: 20
+
+consolidator:
+  sweep:
+    interval_seconds: 86400  # 24 hours - run daily
+    value_threshold_keep: 15  # Score >= 15: keep as individual file
+    value_threshold_extract: 5  # Score >= 5: extract knowledge then archive
+    # Score < 5: consolidate directly
+    enabled: true
+  state:
+    path: ./data/consolidator_state.json
+    max_sweep_history: 20
