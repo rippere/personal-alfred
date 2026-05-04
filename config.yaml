@@ -1,5 +1,5 @@
 vault:
-  path: /home/rippere/Projects/obsidian-vault
+  path: /home/rippere/obsidian-vault
   ignore_dirs:
   - _templates
   - _bases
